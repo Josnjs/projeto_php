@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ca12b45c73.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Seja bem vindo a plataforma de cursos de programação</h1>
+    </header>
+
+    <form action="viewDados.php" method="get">
+      <button type="submit" class="dadoAluno">Alunos cadastrados</button>
+    </form>
+
+    <div class="cursos">
+      <div class="curso">
+        <p>Formação JavaScript</p>
+        <p>Carga horária: <strong>360 hrs</strong></p>
+        <i class="fa-brands fa-js"></i>
+      </div>
+      <div class="curso">
+        <p>Formação Java</p>
+        <p>Carga horária: <strong>600 hrs</strong></p>
+        <i class="fa-brands fa-java"></i>
+      </div>
+      <div class="curso">
+        <p>Formação NodeJs</p>
+        <p>Carga horária: <strong>400 hrs</strong></p>
+        <i class="fa-brands fa-node"></i>
+      </div>
+      <div class="curso">
+        <p>Formação PHP</p>
+        <p>Carga horária: <strong>400 hrs</strong></p>
+        <i class="fa-brands fa-php"></i>
+      </div>
+    </div>
+    <form method="POST" action="cadastra_inf.php" class="form">
+      <h2>Escolha um curso e inscreva-se agora mesmo!</h2>
+      <input type="text" name="nome" required placeholder="Nome..." />
+      <input type="email" name="email" required placeholder="Email..." />
+      <select name="curso" id="curso" required>
+        <option disabled selected="false">Escolha um curso</option>
+        <option value="javascript">JavaScript</option>
+        <option value="java">Java</option>
+        <option value="nodejs">NodeJS</option>
+        <option value="php">PHP</option>
+      </select>
+      <input type="submit" value="INSCREVER" />
+    </form>
+  </body>
+</html>

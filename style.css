@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  background-color: #f6f6f6;
+  font-family: "Poppins", sans-serif;
+}
+header {
+  background-color: #182119;
+  color: #fff;
+  padding: 2rem;
+  justify-content: center;
+}
+header h1 {
+  text-align: center;
+  padding: 2rem;
+}
+.dadoAluno {
+  display: flex;
+  width: 20%;
+  padding: 1rem;
+  justify-content: center;
+  cursor: pointer;
+  margin: 2rem auto;
+  color: #fff;
+  border-radius: 4px;
+  background-color: #182119;
+  transition: 0.3s ease-in;
+}
+.dadoAluno:hover {
+  background-color: transparent;
+  color: #182119;
+  outline: 1px solid #182119;
+}
+
+.cursos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.cursos .curso {
+  width: 20%;
+  background-color: #dedede;
+  border-radius: 4px;
+  padding: 0.5rem;
+  text-align: center;
+  transition: 0.3s ease-in;
+}
+.curso {
+  cursor: pointer;
+}
+.curso:hover {
+  transform: scale(1, 1.2);
+  background-color: #9f9f9f;
+}
+.curso i {
+  font-size: 64px;
+  border-radius: 4px;
+}
+.form {
+  /* color: #fff; */
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  width: 40%;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+  /* background-color: #182119; */
+  background-color: #dedede;
+  box-shadow: 2px 4px 12px #b7b7b7;
+  transition: 0.3s ease-in;
+}
+.form:hover {
+  background-color: #9f9f9f;
+}
+.form h2 {
+  padding: 1rem;
+}
+.form input {
+  border-radius: 4px;
+  border: none;
+  padding: 8px;
+}
+.form input[type="submit"] {
+  font-size: 16px;
+  color: #fff;
+  background-color: #2c832c;
+  width: 50%;
+  margin: 12px auto 0;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+.form input[type="submit"]:hover {
+  opacity: 70%;
+}
